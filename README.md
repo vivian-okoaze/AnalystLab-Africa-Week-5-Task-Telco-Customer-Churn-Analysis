@@ -15,9 +15,9 @@
 
 ## 📌 Project Overview
 
-This project is a comprehensive, end-to-end **Business Analytics Case Study** completed as part of the **AnalystLab Africa Internship Program (Batch B — Week 5)**. The analysis focuses on understanding and solving the customer churn problem for a fictional telecommunications company using real-world data from IBM Watson Analytics.
+This project is a comprehensive, end-to-end **Business Analytics Case Study** completed as part of the **AnalystLab Africa Internship Program**. The analysis focuses on understanding and solving the customer churn problem for a fictional telecommunications company using real-world data from IBM Watson Analytics.
 
-Customer churn — the rate at which customers stop doing business with a company — is one of the most costly challenges in the telecommunications industry. Research consistently shows that **acquiring a new customer costs 5 to 7 times more than retaining an existing one**, making churn prevention a direct and measurable lever on business profitability.
+Customer churn — the rate at which customers stop doing business with a company is one of the most costly challenges in the telecommunications industry. Research consistently shows that **acquiring a new customer costs 5 to 7 times more than retaining an existing one**, making churn prevention a direct and measurable lever on business profitability.
 
 This project follows a structured, professional analytics workflow:
 
@@ -52,7 +52,7 @@ The final output includes a fully interactive **2-page Power BI dashboard**, a d
 
 ## ❓ Business Problem Statement
 
-A telecommunications company is experiencing a **churn rate of 26.5%** — significantly above the industry benchmark of 15–20%. This means more than **1 in 4 customers** is leaving within the observation period, representing a substantial and ongoing revenue loss.
+A telecommunications company is experiencing a **churn rate of 26.5%** significantly above the industry benchmark of 15–20%. This means more than **1 in 4 customers** is leaving within the observation period, representing a substantial and ongoing revenue loss.
 
 The business has identified four critical questions it needs answered:
 
@@ -109,7 +109,8 @@ This analysis was designed to answer all four questions using the available cust
 
 
 ### Page 2 — Churn Drivers & Root Cause Analysis
-<img width="521" height="293" alt="Screenshot 2026-07-03 123955" src="https://github.com/user-attachments/assets/7df7eeab-836f-48f3-abca-74a3b2373051" />
+<img width="607" height="341" alt="Screenshot 2026-07-04 072908" src="https://github.com/user-attachments/assets/0553026a-4ccb-4220-9260-60ced6df56f9" />
+
 
 
 ## 🔄 Project Workflow
@@ -166,7 +167,7 @@ Churned Customers =
 CALCULATE(COUNTROWS('WA_Fn-UseC_-Telco-Customer-Churn'),
     'WA_Fn-UseC_-Telco-Customer-Churn'[Churn] = 1)
 
-Churn Rate = DIVIDE([Churned Customers], [Total Customers], 0)
+Overall Churn Rate = DIVIDE([Churned Customers], [Total Customers], 0)
 
 Retained Customers = [Total Customers] - [Churned Customers]
 
@@ -230,7 +231,7 @@ IF('WA_Fn-UseC_-Telco-Customer-Churn'[OnlineBackup] = "No", "No Online Backup", 
 | Overall Churn Rate | KPI Card | 26.54% — above benchmark |
 | Avg Monthly Charges | KPI Card | $64.76 average bill |
 | Avg Tenure | KPI Card | 32.37 months average |
-| Churn Distribution | Donut Chart | 73.5% retained vs 26.5% churned |
+| Churn Distribution | Pie Chart | 73.5% retained vs 26.5% churned |
 | Churn by Tenure Group | Column Chart | First-year customers at 47.4% |
 | Churn by Contract Type | Bar Chart | Month-to-month at 42.7% |
 | Churn by Internet Service | Bar Chart | Fiber optic at 41.9% |
@@ -246,7 +247,7 @@ IF('WA_Fn-UseC_-Telco-Customer-Churn'[OnlineBackup] = "No", "No Online Backup", 
 | Churn by Billing Type | Bar Chart | Paperless billing at 33.6% |
 | Churn: With vs Without Add-Ons | Clustered Bar Chart | 27pp gap for Online Security |
 | Churn by Demographic Factor |Table (conditional formatting) | Seniors and singles at highest risk |
-| Slicers | Dropdown | Gender + Contract — filters all visuals |
+| Slicers | Dropdown | Gender + Contract + Dependents + Partner — filters all visuals |
 
 ---
 
@@ -321,7 +322,7 @@ telco-churn-analysis/
 
 | Category | Skills |
 |---|---|
-| **SQL** | Data import, schema exploration, NULL handling, CASE statements, UPDATE queries, GROUP BY aggregation, duplicate detection |
+| **SQL** | Data import, schema exploration, NULL handling, CASE statements, UPDATE queries, duplicate detection |
 | **Excel** | Data cleaning, type conversion, calculated columns, pivot tables, summary statistics, EDA |
 | **Power BI** | DAX measures, calculated columns, SWITCH/IF logic, interactive slicers, conditional formatting, clustered bar charts, donut charts, matrix visuals, KPI cards |
 | **Analytics** | Churn analysis, segmentation, root cause analysis, business insight generation |
@@ -332,7 +333,7 @@ telco-churn-analysis/
 ## 👤 Author
 
 **Name:** *(Vivian Okoaze)*
-**Program:** AnalystLab Africa Internship — Batch B
+**Program:** AnalystLab Africa Internship
 **Week:** 5 — Business Analytics Case Study
 **Dataset:** [Telco Customer Churn — Kaggle](https://www.kaggle.com/datasets/blastchar/telco-customer-churn)
 
