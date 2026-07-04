@@ -97,7 +97,7 @@ This analysis was designed to answer all four questions using the available cust
 
 | Tool | Version | Purpose |
 |---|---|---|
-| **Microsoft SQL Server Express** | 17.0 | Data import, structure exploration, missing value detection, duplicate checking |
+| **Microsoft SQL Server Express** | 22.0 | Data import, structure exploration, missing value detection, duplicate checking |
 | **Microsoft Excel** | 2021/365 | Data cleaning, calculated fields, pivot tables, EDA summary statistics |
 | **Microsoft Power BI Desktop** | Latest | Interactive dashboard, DAX measures, calculated columns, data visualisation |
 
